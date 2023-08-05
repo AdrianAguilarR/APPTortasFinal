@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="subtitulo ion-text-wrap">
+      TORTAS & CUPCAKES D'PONCECA
+    </ion-title>
+    
+    <ion-buttons slot="start">
+      <ion-button (click)="openMenu()">
+         <ion-icon color="primary" slot="icon-only"  name="menu-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/carrito']" >
+        <ion-icon color="primary" slot="icon-only"  name="cart-sharp"></ion-icon>
+     </ion-button>
+      <ion-button [routerLink]="['/perfil']" >
+         <ion-icon color="primary" slot="icon-only"  name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div *ngFor="let producto of productos">
+      <app-producto [producto]= producto></app-producto>
+    </div>
+
+
+    <div class="texto-estilizado">
+      <p>CONTACTOS</p>
+      <p>TORTAS & CUPCAKES D'PONCECA</p>
+      <p>AV. LOS PINOS Nº 239. CCOÑECCPUQUIO</p>
+    </div>
+    
+
+    <div id="container" class="icon-container">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Tortas.Cupcakes.DPonceca">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=928071731">
+        <ion-icon id="whatsapp-icon" name="logo-whatsapp"></ion-icon>
+      </a>
+      <a href="mailto:Ponceca17@gmail.com">
+        <ion-icon name="mail"></ion-icon>
+      </a>
+      <a href="mailto:Ponceca17@gmail.com">Ponceca17@gmail.com</a>
+      <div class="text-center m-5">
+        <ion-button (click)="sendNotification()" class="normal">
+            enviar notificación
+        </ion-button>
+      </div>
+    
+    </div>
+
+ 
+
+
+
+</ion-content>

@@ -1,0 +1,47 @@
+
+/* styles.scss */
+.toolbar-center {
+    --ion-justify-content-start: center; /* Centrar la barra de herramientas horizontalmente */
+    --ion-align-items-center: center; /* Centrar la imagen verticalmente */
+  }
+  .menu-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(214, 197, 197);
+    padding-top: 10px;
+  }
+  
+  .icon-container ion-icon {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  
+  #whatsapp-icon {
+    color: green;
+  }
+  .texto-estilizado {
+    // text-align: center;
+    font-size: 20px;
+    color: #000000;
+    font-style: italic;
+    
+  }
+  
+  .texto-estilizado p {
+    font-size: 15px;
+    font-style: italic;
+  }
+  
+
+  
+  .texto-estilizado p:last-child {
+    margin-top: 10px;
+    font-size:15px;
+    font-style: italic;
+  }
+  
